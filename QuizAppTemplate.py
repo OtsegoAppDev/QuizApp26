@@ -35,7 +35,6 @@ questionList.append(question5)
 
 
 answerList = ["Instance", "Properties", "Methods", "Text", "No"]
-choicesList = [["Creation", "Instance", "Establishment", "Definition"], ["Properties","Numbers", "Files", "Descripters"], ["Regulators", "Events", "Elaborators", "Methods"],["Yarn", "Guitars", "Text", "Functions"], ["Yes", "No"]]
 
 ImageList = ["ImageQuestion1.png", "ImageQuestion2.png", "ImageQuestion3.png", "ImageQuestion4.png", "ImageQuestion5.png"]
 index = 0
@@ -45,9 +44,9 @@ nameLabel = Text(app, text="Your Name: ")
 nameTextBox = TextBox(app)
 picture = Picture(app, image = "ImageQuestion1.png")
 question = Text(app, text = question1)
+answerTextBox = TextBox(app, width = 50)
 submitButton = PushButton(app, text = "Submit Answer", command = submitPressed)
 nextButton = PushButton(app, text = "Next Question", command = nextPressed)
-answerChoices = ButtonGroup(app, options = ["Creation", "Instance", "Establishment", "Definition"], selected = None)
 
 
 app.display()
